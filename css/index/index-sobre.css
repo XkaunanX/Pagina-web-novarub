@@ -1,0 +1,82 @@
+body{
+    background-color: #DBDFE0;
+}
+
+/*PRIMERA SECCION SOBRE NOSOTROS*/
+.sobre-nosotros-index{
+    width: 100%;
+    padding: 30px;
+    background-image: url(/img/fabrica-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgba(255,255,255);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-nosotros-index .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-nosotros-index .container .texto{
+    max-width: 800px;
+}
+
+.sobre-nosotros-index .container .texto p{
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.sobre-nosotros-index .container .texto a{
+    background-color: #99242C;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: rgba(255,255,255);
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+
+.sobre-nosotros-index .container .texto div{
+    margin-top: 5rem;
+}
+
+.sobre-nosotros-index .container .texto a:hover{
+    background-color: #7c1219;
+    transition: 0.5s;
+}
+
+.sobre-nosotros-index .container .texto div{
+    text-align: center;
+}
+
+.logo-sobre-nosotros-index{
+    width: 500px;
+}
+
+@media (max-width: 576px){
+    
+    .sobre-nosotros-index .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sobre-nosotros-index .container .texto {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .sobre-nosotros-index{
+        padding: 10px;
+    }
+
+}

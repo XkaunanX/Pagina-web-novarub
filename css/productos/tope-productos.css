@@ -1,0 +1,21 @@
+.tope-productos{
+    /*background-color: rgba(80,80,80);*/
+    background-color: #929292;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tope-productos .container{
+    max-width: 1600px;
+    padding: 0px;
+}
+
+/*RESPOSIVO*/
+@media (max-width: 576px){
+    .tope-productos{
+        height: fit-content;
+        padding-top: 64px;
+    }
+}

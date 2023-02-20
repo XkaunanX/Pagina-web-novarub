@@ -1,0 +1,142 @@
+:root{
+    --color_text-primary: #000000;
+    --color_text-secundary: #101E2C;
+    --color_text-tertiary: #485663;
+    --lowText_font_size: 16px;
+    --text_size_title: 40px;
+    --text_title_card: 24px;
+    --text_title_cardv2: 20px;
+    --text_paragraph: 16px;
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+}
+
+body{
+    background-color: #DBDFE0;
+    background-image: linear-gradient( 0deg, rgba(248, 248, 248, 0.384), rgba(0, 0, 0, 0.178) ), url(/img/fondo-contacto.png);
+    font-weight: 600;
+    width: 100%;
+}
+
+.contacto{
+    padding-top: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*TEXTO*/
+.contacto .container .texto{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.contacto .container .texto h1{
+    font-weight: 600px;
+    font-size: 2rem;
+}
+
+.contacto .container .texto ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.contacto .container .texto li{
+    padding: 5px;
+    color: #1d1d1d;
+}
+
+.contacto .container .texto li a{
+    color: #1d1d1d;
+}
+
+.contacto .container .texto li i{
+    font-style: normal;
+}
+
+.contacto .container .texto li:hover > i{
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%{
+        transform:  rotate(0deg);
+    }
+    25%{
+      transform:  rotate(10deg);
+    }  
+    50% {
+      transform:  rotate(-10deg);
+    }
+    100% {
+        transform:  rotate(0deg);
+    }
+}
+
+/*FORMULARIO*/
+.contacto .container .formulario{
+    background-color: rgba(30,30,30,0.3);
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.contacto .container .formulario .form{
+    padding: 10px;
+}
+
+.contacto .container .formulario .form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .container .formulario .form div input{
+    border: 2px solid rgba(32, 32, 32, 0.637);
+    width: 90%;
+    box-shadow: none;
+    transition: all 100ms linear;
+}
+
+.contacto .container .formulario .form div input:focus{
+    border: 2px solid #007bffcc;
+    width: 90%;
+}
+
+
+.contacto .container .formulario .form textarea{
+    margin: 10px 0px;
+    resize: none;
+}
+
+@media (max-width: 1200px){
+
+    .contacto{
+        height: fit-content;
+        padding-bottom: 40px;
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    .contacto .container .texto{
+        display: none;
+    }
+
+    .contacto .container .formulario{
+        background-color: rgba(30,30,30,0.3);
+        padding: 30px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+}

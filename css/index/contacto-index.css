@@ -1,0 +1,108 @@
+/*contenedor*/
+.contacto-index{
+    background-color: #101E2C;
+    height: 100vh;
+    color: #EFF3F5;
+}
+
+.contenedor{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    height: 100%;
+    width: 100%;
+}
+
+/*imagen*/
+
+.contacto-index .contenedor .contenedor-imagen{
+    width: 50%;
+}
+
+.contacto-index .contenedor .contenedor-imagen .imagen{
+    width: 100%;
+    height: 100%;
+    filter: blur(0px);
+}
+
+/*texto*/
+
+.contacto-index .contenedor .contenedor-texto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto h1{
+    margin-bottom: 50px;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto a{
+    text-decoration: none;
+    color: #EFF3F5;
+    border: 2px solid #EFF3F5;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contacto-index .contenedor .contenedor-texto p{
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto a i{
+    font-size: 0rem;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto a:hover > i{
+    display: inline;
+    font-size: 1rem;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.contacto-index .contenedor .contenedor-texto .tarjeta-texto a:hover{
+    color: #eef1f3;
+    border: 2px solid #eef1f3;;
+}
+
+/*resposivo*/
+@media (max-width: 576px){
+
+    .contacto-index{
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .contacto-index .contenedor .contenedor-texto{
+        width: 100%;
+    }
+    
+    .contacto-index .contenedor .contenedor-imagen{
+        width: 100%;
+    }
+
+    .contacto-index .contenedor .contenedor-texto .tarjeta-texto h1{
+    font-size: 2rem;
+    }
+
+}

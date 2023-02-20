@@ -1,0 +1,91 @@
+.tyre-curing-bladder-empresa{
+    background-color: #101E2C;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem 9%;
+    padding-top: 50px;
+}
+
+.tyre-curing-bladder-empresa .contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.tyre-curing-bladder-empresa .derecha{
+    width: 50%;
+}
+
+.tyre-curing-bladder-empresa .izquierda{
+    width: 50%;
+}
+
+.tyre-curing-bladder-empresa h2{
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.tyre-curing-bladder-empresa h2::after{
+    content: '';
+    height: 6px;
+    width: 30%;
+    background-color: #ffffff;
+    display: block;
+    margin-top: 30px;
+}
+
+.tyre-curing-bladder-empresa p{
+    color: #ffffffe5;
+    font-weight: 600;
+    line-height: 1.8;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.tyre-curing-bladder-empresa .contenedor .derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.tyre-curing-bladder-empresa .contenedor .derecha img{
+    width: 300px;
+    filter: invert(100%);
+    opacity: 0.9;
+}
+
+@media screen and (max-width:1200px){
+    .tyre-curing-bladder-empresa{
+        height: fit-content;
+    }
+
+    .tyre-curing-bladder-empresa .contenedor{
+        flex-direction: column-reverse;
+    }
+
+    .tyre-curing-bladder-empresa{
+        height: fit-content;      
+    }
+
+    .tyre-curing-bladder-empresa .derecha{
+        width: 100%;
+    }
+    
+    .tyre-curing-bladder-empresa .izquierda{
+        width: 100%;
+    }
+    .tyre-curing-bladder-empresa .contenedor .derecha img{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .tyre-curing-bladder-empresa h2{
+        font-size: 2rem;
+        text-align: initial;
+    }
+
+}

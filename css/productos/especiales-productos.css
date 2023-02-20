@@ -1,0 +1,83 @@
+.especiales-productos{
+    height: 100vh;   
+    background-color:rgba(100, 100, 100);;
+}
+.especiales-productos .container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    padding: 0px;
+}
+
+.especiales-productos .derecha{
+    background-image: url(/img/fondo-especiales.JPG);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.especiales-productos .izquierda{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.especiales-productos .izquierda h2{
+    color: #ffffff;
+    font-size: 4rem;
+    width: 80%;
+}
+
+.especiales-productos .izquierda img{
+    width: 100px;
+    opacity: 0.8;
+    margin-right: 20px;
+}
+
+
+.especiales-productos .izquierda div{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 0px;
+    font-weight: 600;
+    width: 80%;
+}
+
+@media screen and (max-width:1200px){
+    .especiales-productos{
+        height: fit-content;
+    }
+
+    .especiales-productos .container{
+        flex-direction: column; 
+        margin: 50px 0px;
+    }
+
+    .especiales-productos .container *{
+        margin-top: 30px;
+    }
+
+    .especiales-productos .derecha{
+        
+       display: none;
+        
+    }
+    
+    .especiales-productos .izquierda{
+        width: 100%;    
+        height: fit-content;
+    }
+
+    .especiales-productos .izquierda h2{
+        color: #212529;
+        font-size: 2.5rem;
+        text-align: initial;
+    }
+    
+}

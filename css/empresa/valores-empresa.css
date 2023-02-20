@@ -1,0 +1,103 @@
+.valores-empresa{
+    height: 100vh;   
+}
+.valores-empresa .container{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1600px;
+    padding: 0px;
+}
+
+.valores-empresa .derecha{
+    background-image: url(/img/fondo-valores.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.valores-empresa .izquierda{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.valores-empresa .izquierda h2{
+    color: #212529;
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+.valores-empresa .izquierda h2::after{
+    content: '';
+    height: 6px;
+    width: 30%;
+    background-color: #212529;
+    display: block;
+    margin-top: 20px;
+}
+
+.valores-empresa .izquierda img{
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+    margin-right: 20px;
+}
+
+.valores-empresa .izquierda .tarjeta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+
+.valores-empresa .izquierda .tarjeta h4{
+    margin-bottom: 10px;
+}
+
+.valores-empresa .izquierda .tarjeta p{
+    color: #212529;
+    font-size: 1rem;
+    margin-top: 0px;
+    font-weight: 600;
+    width: 100%;
+}
+
+@media screen and (max-width:1200px){
+    .valores-empresa{
+        height: fit-content;
+    }
+
+    .valores-empresa .container{
+        flex-direction: column; 
+        margin: 50px 0px;
+    }
+
+    .valores-empresa .container *{
+        margin-top: 30px;
+    }
+
+    .valores-empresa .derecha{
+        
+       display: none;
+        
+    }
+    
+    .valores-empresa .izquierda{
+        width: 100%;    
+        height: fit-content;
+    }
+
+    .valores-empresa .izquierda h2{
+        color: #212529;
+        font-size: 2.5rem;
+        text-align: initial;
+    }
+    
+
+}
